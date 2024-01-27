@@ -1,0 +1,282 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/1343047.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    font-family: 'Verdana';
+}
+
+
+main {
+    margin: 1em;
+}
+
+main section img {
+    border: 1px solid #4d1284;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+
+}
+
+/*Hoofdstukken en teksten*/
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana';
+    display: block;
+    margin: 35px;
+}
+
+h2 {
+    
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana';
+    margin: 35px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana';
+    margin: 35px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana';
+ 
+
+}
+/*navbar*/
+nav {
+    padding: 2em;
+    background-color: #4d1284;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    display: block;
+    /* float: left; */
+}
+
+header nav ul li a {
+    display: block;
+    padding: 9px 7px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover {
+    padding: 9px 7px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+
+}
+
+header nav a img {
+    width: 65px;
+    height: 65px;
+
+}
+
+header nav a img:hover {
+    animation-name: spannend-animation;
+    animation-duration: 2s;
+}
+
+div img:hover {
+    animation-name: spannend-animation;
+    animation-duration: 2s;
+}
+
+
+/*vlaglar icin*/
+
+@keyframes spannend-animation {
+    0% {
+      scale:1;
+    }
+    50% {
+      scale:1.2;
+    }
+    100% {
+      scale:1;
+    }
+}
+
+
+
+/*vlaglar icin*/
+main ul:nth-of-type(1) {
+    display:flex;
+    gap:.5em;
+    
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior: contain auto;
+    -webkit-overflow-scrolling: touch;
+}
+  
+main ul:nth-of-type(1) li {
+    flex-basis:5em;
+    flex-shrink:0;
+    align-items:center;
+    gap:.25em;
+    scroll-snap-align: center;
+    display:flex;
+    flex-direction:column-reverse;
+    margin: 22px;
+}
+
+main ul img {
+    border: 2px solid #4d1284;
+    border-radius: 22px;
+    padding: 0%;
+    width: 425px;
+    
+}
+
+
+ul li {
+    list-style: none;
+    text-align: center;
+}
+
+ul li img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+
+#mijnfavorieten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid #4d1284;
+    padding: 0em;
+    background-color: #4d1284;
+    margin: 2em;
+    border-radius: 22px;
+
+
+}
+
+div img{
+    width: 300px;
+    height: 360px;
+    padding: 0em;
+    margin: 0.5em;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div h2 {
+    display: flex;
+    justify-content: center;
+    padding: 4em;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+
+}
+
+.video video {
+    padding: 2em;
+    margin: 2em; 
+    height: 30em;
+}
+
+
+.Duitsland, .Nederland, .Denemarken, .Turkije, .Belgie, .Frankrijk  {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    border: 7px solid #4d1284;
+    padding: 2em;
+    background-color: #4d1284;
+    margin: 2em;
+    border-radius: 22px;
+}
+
+.Duitsland h2,.Nederland h2,.Denemarken h2,.Turkije h2,.Belgie h2,.Frankrijk h2 {
+    margin-top: 4em;
+
+}
+
+
+
+
+.overmij {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.overmij p{
+    border: 7px solid #4d1284;
+    padding: 3em;
+    background-color: #4d1284;
+    margin: 2em;
+    border-radius: 22px;
+
+}
+
+.overmij img{
+    border: 7px solid #4d1284;
+    background-color: #4d1284;
+    margin: 2em;
+    border-radius: 22px;
+    width: 200px;
+    height: 260px;
+    padding: 0em;
+    margin: 1em;
+
+}
+
+/*Footer*/
+footer {
+    font-family: 'Courier New';
+    padding: 0em;
+    background-color: #4d1284;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0em;
+
+}
+
+
